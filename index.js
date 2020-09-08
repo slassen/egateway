@@ -16,7 +16,7 @@ Object.entries(list).forEach(([key, value]) => {
   console.log(`${key} => ${value}`);
   app.use(key, proxy(value, {
     proxyReqPathResolver: (req) => {
-      return `${key}${req.url}`;
+      return req.originalUrl;
     }
   }));
 });
