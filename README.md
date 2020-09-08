@@ -4,6 +4,6 @@
 ```js
 {
   "/api/v0/app/:appKey/stack": "http://localhost:4003",
-  "/api/v0": "http://localhost:4002/api/v0"
+  "/api/v0": "http://localhost:4002"
 }
 ```
